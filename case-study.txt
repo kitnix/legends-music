@@ -1,0 +1,16 @@
+Title: 
+	Legends Music
+
+Summary:
+	Legends Music is a regularly updated, on-the-go site that gives access to indie music news, reviews, and concerts for the D.C audience.
+
+Tools: Photoshop
+	Axure
+	Atom
+	Chrome dev tools
+
+Languages: HTML
+	   CSS
+
+I started with creating user personas based on Legends Music's target audience and determined that due to their busy lifetyle mobile devices would be primarily used. Relying on user flows to dictate the best sitemap, mobile user experience was considered very carefully. Wireframes finalized the layout, ensuring for intuitive use on various devices and scenarios. I tested the site with 3 users and made adjustments based on their feedback. 
+There were a few small design changes part way through the project which were only decided as I started to build the project. With more time I would like to make more adjustments to the concert page allowing for the user to sort through the upcoming concerts based on different categories, such as, venue, date, and band name. I went a little "off book" with this project and I was very happy to add my own design concepts instead of following the procedure. While a little frustrating at times, it led to independent solutions which furthered my understanding of web development. 

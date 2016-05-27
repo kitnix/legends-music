@@ -1,0 +1,1157 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+ background: #b3d4fc;
+ text-shadow: none;
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio, canvas, iframe, img, svg, video {
+	vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Colors
+Dark Grey: #3b403f
+Dark green: #2b665b
+Medium Grey: #77807e
+mint blue: #dbfef8
+pacific green: #36dbca
+
+xMint: #9AFFDE
+
+http://www.december.com/html/spec/color2.html
+*/
+
+body, html{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	color: #3b403f;
+}
+
+a{
+	color: #36dbca;
+	text-decoration: none;
+}
+
+p{
+	font-size:1em;
+	line-height:1.4em;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Oswald', sans-serif;
+	font-weight:bold;
+}
+
+h1{
+	color: #2b665b;
+	text-transform:uppercase;
+	font-size:1.4em;
+	line-height:1.6em;
+}
+
+h2{
+	text-transform:uppercase;
+	font-size:1em;
+}
+
+h3{
+	font-size: .8em;
+	letter-spacing: 2px;
+}
+
+h4{
+
+}
+
+p{
+	font-size:1em;
+	line-height:1.4em;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.feed{
+	font-weight:bold;
+}
+
+.btn{
+	background-color:#fff;
+	border:none;
+	color:#2b665b;
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:2.5em;
+	text-align: center;
+	box-shadow:2px 2px 0px #DADADA;
+	height:2.5em;
+	width:100%;
+	display:block;
+}
+.btn:hover{
+	background-color: #77807e;
+	color: #dbfef8;
+}
+
+.no-border{
+	border:none;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* Header =========================== */
+header {
+	width: 100%;
+	margin:auto;
+}
+
+#logo {
+	width: 100%;
+	margin: auto;
+	padding:2%;
+	text-align:center;
+	font-size: 2em;
+	background-color: #dbfef8;
+}
+
+/*
+#logo:hover{
+	background-color:  #77807e;
+	color: #bdfef8;
+}*/
+
+nav {
+	width: 100%;
+}
+
+nav ul {
+	margin: auto;
+	list-style: none;
+	padding: 0px;
+}
+nav ul li {
+	background-color: #3b403f;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0;
+}
+
+nav ul li a {
+	font-size:1.125em;
+	text-transform:uppercase;
+	color: #dbfef8;
+}
+
+nav i {
+	padding-right: 10px;
+}
+/*nav ul li:hover{
+	background-color: #fff;
+}
+
+nav ul li a:hover{
+		color:#2b665b;
+}*/
+
+/* Main Content =========================== */
+#main-content {
+	clear: both;
+	width: 94%;
+	margin:auto;
+	max-width: 960px;
+
+}
+
+/* HOME PAGE AND REVIEWS PAGE ================================ */
+
+/* Featured News Item =========================== */
+
+.top-story {
+	width:100%;
+	border-bottom:1px solid #ccc;
+}
+.top-img {
+	width:100%;
+	height: auto;
+	margin:0px;
+}
+
+.top-img img{
+	width:100%;
+}
+
+
+/* Side Bar =========================== */
+
+aside{
+}
+.sidebar {
+	width:100%;
+}
+.newsletter {
+		border-bottom:1px solid #ccc;
+		padding-bottom: 20px;
+}
+		.newsletter input{
+			width:100%;
+			box-sizing: border-box;
+		}
+		.newsletter input[type="text"]{
+			margin-bottom:10px;
+			padding:5px 0px;
+		}
+
+.sidebar-upcoming {
+	display:none;
+}
+
+.sidebar i{
+	padding-right: 10px;
+}
+
+.writer {
+	padding-bottom: 20px;
+		border-bottom:1px solid #ccc;
+}
+
+.writer input{
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+aside .writer textarea {
+	width: 100%;
+}
+
+.writer input[type="text"] {
+	padding: 7px 0px;
+	margin-right:2%;
+}
+
+.writer textarea[type="text"] {
+	padding: 7px 0px;
+	margin-right:2%;
+}
+
+#concerts .newsletter{
+	display: none;
+}
+
+.miss span{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.miss{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+
+/*  =========================== News/Reviews Feed Section */
+
+.feed {
+	width:100%;
+}
+.feed p{
+		display:none;
+}
+
+.feed-item {
+	clear:both;
+	border-bottom: 1px solid #ccc;
+	padding-bottom:15px;
+}
+
+.feed-item h2 a{
+	color: #3b403f;
+}
+
+.feed-item h2 a:hover{
+	color:#36dbca;
+}
+
+.feed-type {
+	text-transform:uppercase;
+	font-size:0.8em;
+}
+
+.feed-img {
+	width:45%;
+	padding-right:3%;
+	float:left;
+	margin:0px;
+}
+
+
+
+/*  ========================================= DETAILED PAGES */
+
+.reviews-img, .news-img{
+	width:100%;
+	margin:10px 0px;
+}
+
+.article h3{
+	font-weight: normal;
+}
+
+ul.article-meta-info{
+	list-style:none;
+	padding:0px;
+	width: 100%;
+	height: 2em;
+}
+	ul.article-meta-info li{
+		float:left;
+		margin-bottom:10px;
+	}
+	.article-author{
+		padding-right:10px;
+		border-right:1px solid;
+		margin-right:10px;
+	}
+
+/*  ============================================== ABOUT PAGE */
+
+.mission{
+	width:100%;
+}
+
+.team{
+
+}
+
+.team-member{
+	padding: 15px 0px;
+}
+
+.team-img{
+	background-position:center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	width: 40%;
+	padding-bottom: 40%;
+	float: left;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+
+}
+
+.team-name{
+	margin-bottom: 0px;
+}
+
+.team-title{
+	margin-top: 0px;
+	font-style: italic;
+}
+
+.team-description{
+	display: none;
+}
+
+#team-img-jack {
+	background-image:url('../img/team-jack.png');
+}
+
+#team-img-lana {
+	background-image:url('../img/team-lana.png');
+}
+
+#team-img-willow {
+	background-image:url('../img/team-willow.png');
+}
+
+
+.map-container {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+
+.map-container iframe {
+	padding-top: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* ============================================= CONCERT PAGE*/
+
+#concerts{
+	text-align: center;
+}
+
+/*#concerts h1 {
+	margin-bottom: 20px;
+}*/
+
+.show .btn{
+	margin: 0 auto;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+#concerts p{
+	line-height: 0.5em;
+}
+
+.show h2{
+	margin-top: 15px;
+}
+
+.show{
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
+.show .feed-img{
+	height: 128px;
+	width: 128px;
+	padding-top: 12px;
+}
+
+
+/* ============================================== Footer */
+footer {
+	clear: both;
+	width: 100%;
+	margin: auto;
+	background-color:#dbfef8;
+	border-top:1px solid #ccc;
+	/*padding-top:10px;*/
+	margin-top:10px;
+}
+
+.icons i{
+	padding-right: 20px;
+	color:#2b665b;
+}
+
+#footer-logo {
+	width: 60%;
+	/*background-color:#000;*/
+	text-align:center;
+	margin:auto;
+	padding:5%;
+	font-size: 1.3em;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+	display: none !important;
+}
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before, .clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.clearfix:after {
+	clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+	 /* Colors
+	 Dark Grey: #3b403f
+	 Dark green: #2b665b
+	 Medium Grey: #77807e
+	 mint blue: #dbfef8
+	 pacific green: #36dbca
+	 */
+
+
+ @media (min-width:768px) {
+
+	/* TABLET Header =========================== */
+
+	.blue-line {
+		width:100%;
+		height:2.1em;
+		position:absolute;
+		top:16px;
+		background: #3b403f;
+		/*#dbfef8;*/
+}
+
+	header{
+		width:94%;
+		max-width:960px;
+		margin:auto;
+}
+
+	#logo {
+		width: 30%;
+		float:left;
+		position:relative;
+		z-index:100;
+		box-shadow:2px 2px 0px #77807e;
+	}
+
+	nav {
+		width: 60%;
+		float:right;
+	}
+
+	nav ul li {
+		display:block;
+		float:right;
+		padding:0 4%;
+		border:none;
+		line-height:2em;
+		position:relative;
+		top:16px;
+		background-color: none;
+		/* #3b403f;
+		#dbfef8;*/
+
+	}
+
+	nav ul li a{
+		/*color: #2b665b;*/
+		font-weight: bold;
+	}
+
+	/* TABLET Featured News Item =========================== */
+
+	.top-story {
+		width:100%;
+		padding-top:40px;
+		padding-bottom:50px;
+	}
+
+	.top-img {
+		height:auto;
+		width:50%;
+		float:left;
+		padding-right: 2%;
+	}
+
+	.top-info{
+		width:100%;
+		float:right;
+	}
+
+
+	/* TABLET Side Bar =========================== */
+
+	aside{
+	}
+	.sidebar {
+		clear:both;
+		width:30%;
+		float:right;
+		margin-right:20px;
+		padding-left: 20px;
+		/*max-width: 90%;
+		margin: auto;*/
+	}
+	/*.newsletter {
+	}*/
+	.sidebar-upcoming {
+		display:inline-block;
+		border-bottom:1px solid #ccc;
+		padding-bottom:20px;
+	}
+
+	/*.sidebar-upcoming p{
+		float:left;
+		max-width: 70%;
+
+
+	}
+	.sidebar-upcoming .btn{
+		float: right;
+		max-width: 150px;
+	}*/
+
+	#concerts .sidebar{
+		width: 100%;
+		margin: auto;
+	}
+
+	.miss{
+		margin: auto;
+		width: 80%;
+	}
+
+	#concerts .miss p{
+		line-height: 1.3em;
+	}
+
+	#concerts .newsletter {
+		display: inline-block;
+	}
+
+	/* TABLET News/Reviews Feed Section =========================== */
+
+	.feed {
+		width:60%;
+		float:left;
+		border-right:1px solid #ccc;
+	}
+
+	.feed-img {
+		width:35%;
+	}
+
+	.feed-item{
+		padding-right:20px;
+	}
+	.no-border{
+		border:none;
+	}
+
+	/* TABLET DETAILED PAGES ================================ */
+
+		/*.review{
+			padding-bottom:120px;
+		}*/
+
+	.detailed-content{
+		padding-top:30px;
+	}
+
+	.reviews-img, .news-img{
+		width:50%;
+		margin:10px 0px;
+		float:left;
+		margin-right:3%;
+	}
+
+	.detail-title{
+		width:47%;
+		float:right;
+	}
+
+	aside.detail{
+		width:97%;
+		margin: auto;
+	}
+
+			aside.detail .newsletter{
+				border:none;
+			}
+			aside.detail .newsletter input{
+				display:inline;
+				width:70%;
+			}
+			aside.detail .newsletter .btn{
+				width:25%;
+			}
+			aside.detail .newsletter input[type="text"] {
+				padding: 7px 0px;
+				margin-right:2%;
+			}
+			aside.detail .sidebar-upcoming{
+				max-width: 100%;
+				border:none;
+			}
+			aside.detail .sidebar-upcoming p{
+				display: inline;
+				float: left;
+				max-width: 75%
+
+			}
+			aside.detail .sidebar-upcoming .btn{
+				float: right;
+				width:25%;
+			}
+
+
+
+
+	/*.detail .newsletter h2{
+		display:inline;
+	}*/
+
+	/*ul.article-meta-info{
+		list-style:none;
+		padding:0px;
+		width: 100%;
+		height: 2em;
+	}
+		ul.article-meta-info li{
+			float:left;
+			margin-bottom:10px;
+		}
+		.article-author{
+			padding-right:10px;
+			border-right:1px solid;
+			margin-right:10px;
+		}*/
+
+/*TABLET about page ---------------- */
+
+	.mission{
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		padding: 15px 0px;
+	}
+
+	.team{
+		padding-top: 15px;
+
+		border-bottom: 1px solid #ccc;
+	}
+
+	.team-member{
+		padding: 15px 0px;
+	}
+
+	.team-img{
+		width: 20%;
+		padding-bottom: 20%;
+		margin-right: 10%;
+	}
+
+	/* ============ TABLET Concert Page =========================== */
+
+#concerts {
+
+}
+
+#concerts h1{
+	text-align: left;
+	padding-top: 20px;
+}
+
+.show {
+	display: inline-block; 
+	vertical-align: top;
+	padding: 0 7%;
+	margin: 20px 5%;
+	border-top: none;
+	padding-bottom: 15px;
+}
+
+.show .btn{
+	width: 100%;
+
+}
+
+
+
+
+	/* TABLET Footer =========================== */
+
+footer {
+	width: 100%;
+	clear:both;
+}
+#footer-logo{
+	width:30%;
+	margin:auto;
+	/*max-width: 100px;*/
+	padding: 2%;
+	font-size: 1.5em;
+}
+
+}
+
+
+
+@media (min-width:940px) {
+
+	h1{
+		font-size:1.6em;
+		line-height:1.8em;
+	}
+	h2{
+		font-size:1.4em;
+	}
+
+	/*  DESKTOP Header =========================== */
+
+	.blue-line{
+		top:28px;
+	}
+
+	#logo {
+		width: 30%;
+	}
+	nav {
+		width: 60%;
+	}
+
+	nav ul li {
+		top:28px;
+	}
+
+
+	/* DEASKTOP Featured News Item =========================== */
+
+	#main-content{
+		margin-top: 20px;
+	}
+
+
+	.top-story {
+		width:65%;
+		float:left;
+		border: none;
+		padding-top: 10px;
+		padding-bottom: 0px;
+	}
+
+	.top-story header h1{
+		margin-left: -0.67em;
+	}
+
+	.top-img {
+		width:100%;
+		max-width:620px;
+		padding-bottom:1em;
+	}
+
+	/*.top-img img{
+		max-width: 620px;
+		/*padding-bottom:1em;
+	}*/
+
+	.top-info{
+		width:100%;
+		float:none;
+	}
+
+	/* DESKTOP Side Bar =========================== */
+
+
+	.sidebar {
+		clear:none;
+		width:30%;
+		float:right;
+		border-left:1px solid #ccc;
+		padding-left:2%;
+	}
+
+	#concerts .sidebar{
+		width: 30%;
+	}
+
+	.miss h2, .miss p{
+		text-align: left;
+	}
+
+	.miss{
+		margin: 0;
+		width: 100%;
+	}
+
+	/* DESKTOP News/Reviews Feed Section =========================== */
+
+	.feed {
+		width:100%;
+		float:none;
+		clear: both;
+		padding-top: 20px;
+		border-top:1px solid #ccc;
+		border-right:none;
+	}
+		.feed p{
+			display:block;
+			margin-top: 0px;
+			font-weight:normal;
+		}
+
+		.feed h2{
+			margin:0px;
+		}
+
+	.feed-img {
+		width:20%;
+	}
+
+	/* DESKTOP DETAILED PAGES ================================ */
+
+	article.detailed-content{
+		width:65%;
+		float:left;
+		padding-right:2.5%;
+		border-right:1px solid #ccc;
+	}
+
+	.reviews-img, .news-img{
+		width:100%;
+		float:none;
+	}
+
+	.detail-title{
+		width:100%;
+		float:none;
+	}
+
+
+	aside.detail{
+		width:30%;
+		float:right;
+		border: medium none;
+		padding: 0px;
+	}
+
+			aside.detail .newsletter input{
+				display:block;
+				width:100%;
+			}
+			aside.detail .newsletter .btn{
+				width:100%;
+			}
+			aside.detail .newsletter input[type="text"] {
+				margin-right:0px;
+			}
+
+
+  .left-content{
+		width: 60%;
+		float: left;
+		padding-right: 5%;
+		border-right: 1px solid #ccc;
+	}
+/* DESKTOP About page ======================= */
+
+	.team-member{
+		padding: 15px 0px;
+	}
+
+	.team-img{
+		width: 20%;
+		padding-bottom: 20%;
+		margin-right: 5%;
+	}
+
+	.team-name{
+		margin-top: 0px;
+	}
+
+	.team-description{
+		display: block;
+	}
+
+/* DESKTOP Concerts Page =========================== */
+
+
+.show {
+	padding: 0 3%;
+	margin: 20px 2%;
+	border-top: none;
+	padding-bottom: 15px;
+	float: left;
+}
+
+.show-wrap{
+	width: 60%;
+	float: left;
+}
+
+
+	/* DESKTOP Footer =========================== */
+
+	footer {
+		width: 100%;
+		clear:both;
+	}
+	#footer-logo{
+		width:30%;
+		margin:auto;
+	}
+
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+*,  *:before,  *:after {
+	background: transparent !important;
+	color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+	box-shadow: none !important;
+	text-shadow: none !important;
+}
+a,  a:visited {
+	text-decoration: underline;
+}
+a[href]:after {
+	content: " (" attr(href) ")";
+}
+abbr[title]:after {
+	content: " (" attr(title) ")";
+}
+/*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+a[href^="#"]:after,  a[href^="javascript:"]:after {
+	content: "";
+}
+pre,  blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid;
+}
+/*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+thead {
+	display: table-header-group;
+}
+tr,  img {
+	page-break-inside: avoid;
+}
+img {
+	max-width: 100% !important;
+}
+p,  h2,  h3 {
+	orphans: 3;
+	widows: 3;
+}
+h2,  h3 {
+	page-break-after: avoid;
+}
+}
